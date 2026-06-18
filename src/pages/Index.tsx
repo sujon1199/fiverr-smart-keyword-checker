@@ -685,7 +685,7 @@ const Index = () => {
             Fiverr Compliance Tool
           </span>
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-            Fiverr Keyword <span className="text-neon">Checker</span>
+            Fiverr Smart Keyword <span className="text-neon">Checker</span>
           </h1>
           <p className="text-muted-foreground/80 text-[hsl(var(--foreground))/0.6]">
             Check if your Fiverr content contains any forbidden keywords

@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 150 60% 4%;
+    --background: 330 90% 10%;
     --foreground: 140 40% 92%;
 
     --neon: 142 90% 50%;
@@ -108,15 +108,34 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'DM Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-family:
+      "DM Sans",
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      sans-serif;
     font-feature-settings: "ss01", "cv11";
     background-image:
-      radial-gradient(1200px 600px at 10% -10%, hsl(var(--neon) / 0.06), transparent 60%),
-      radial-gradient(900px 500px at 110% 10%, hsl(var(--panel-border) / 0.18), transparent 55%);
+      radial-gradient(
+        1200px 600px at 10% -10%,
+        hsl(var(--neon) / 0.06),
+        transparent 60%
+      ),
+      radial-gradient(
+        900px 500px at 110% 10%,
+        hsl(var(--panel-border) / 0.18),
+        transparent 55%
+      );
     background-attachment: fixed;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:
+      "Space Grotesk", "DM Sans", ui-sans-serif, system-ui, sans-serif;
     letter-spacing: -0.01em;
   }
 }
@@ -129,15 +148,20 @@ All colors MUST be HSL.
       inset 0 1px 0 hsl(var(--neon) / 0.08);
   }
   .glow-danger {
-    box-shadow: 0 0 0 1px hsl(var(--danger) / 0.45), 0 10px 30px -10px hsl(var(--danger) / 0.25);
+    box-shadow:
+      0 0 0 1px hsl(var(--danger) / 0.45),
+      0 10px 30px -10px hsl(var(--danger) / 0.25);
   }
   .text-neon {
     color: hsl(var(--neon));
     text-shadow: 0 0 18px hsl(var(--neon) / 0.35);
   }
   .panel {
-    background:
-      linear-gradient(180deg, hsl(var(--panel) / 0.92), hsl(var(--panel) / 0.78));
+    background: linear-gradient(
+      180deg,
+      hsl(var(--panel) / 0.92),
+      hsl(var(--panel) / 0.78)
+    );
     border: 1px solid hsl(var(--panel-border) / 0.45);
     border-radius: 1rem;
     box-shadow:
