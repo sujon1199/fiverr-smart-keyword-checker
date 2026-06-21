@@ -277,7 +277,7 @@ const CtaStatsPanel = () => {
       </header>
 
       {entries.length === 0 ? (
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-black dark:text-white/90">
           No CTA activity in the {RANGE_DESCRIPTION[range]}. Clicks from the
           landing pages will appear here.
         </p>
